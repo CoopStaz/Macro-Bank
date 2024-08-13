@@ -1,4 +1,5 @@
 from tkinter import *
+from record_macro import Recorder
 
 # Assign basic UI layout
 tk = Tk()
@@ -9,10 +10,13 @@ tk.columnconfigure(0, weight=1)
 tk.columnconfigure(1, weight=1)
 tk.columnconfigure(2, weight=1)
 
-record_title = Label(tk, text="Macro Recording")
-record_title.grid(row=0, column=1, pady=10)
+# Initialise recorder class
+recorder = Recorder()
 
-record_btn = Button(tk, text="Record", bg='red')
+record_title = Label(tk, text="Macro Recording")
+record_btn = Button(tk, text="Record", bg='red', command=recorder.record())
+
+record_title.grid(row=0, column=1, pady=10)
 record_btn.grid(row=1, column=1)
 
 

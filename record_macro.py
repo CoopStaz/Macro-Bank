@@ -6,3 +6,6 @@ class Recorder:
     def __init__(self):
         self.cur_mouse_x, self.cur_mouse_y = pyautogui.position()
 
+    def record(self):
+        pass
+
