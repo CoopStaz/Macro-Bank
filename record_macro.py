@@ -2,6 +2,8 @@ from pynput import keyboard, mouse
 from datetime import datetime
 import json
 from threading import Thread
+import time
+
 
 class Recorder:
     def __init__(self):
@@ -49,6 +51,8 @@ class Recorder:
 
     # Start the listeners
     def start_listeners(self):
+        print("Recording started. Press ESC to stop.")
+
         # Create new instances of the listeners
         mouse_listener = mouse.Listener(on_click=self.on_click, on_move=self.on_move, on_scroll=self.on_scroll)
         keyboard_listener = keyboard.Listener(on_press=self.on_key_press, on_release=self.on_key_release)
@@ -72,7 +76,11 @@ class Recorder:
 
         def run_listeners():
             try:
-                print("Recording started. Press ESC to stop.")
+                print("The recording will start in: ")
+                for i in reversed(range(6)):
+                    print(f"{i} seconds...")
+                    time.sleep(1)
+
                 self.start_listeners()
 
             except KeyboardInterrupt:
@@ -83,5 +91,5 @@ class Recorder:
                 print("Recording saved to 'recorded_events.json'")
 
         # Create and start a new thread for the listeners
-        self.listener_thread = Thread(target=run_listeners)
-        self.listener_thread.start()
+        listener_thread = Thread(target=run_listeners)
+        listener_thread.start()
