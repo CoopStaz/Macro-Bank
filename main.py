@@ -14,7 +14,7 @@ tk.columnconfigure(2, weight=1)
 recorder = Recorder()
 
 record_title = Label(tk, text="Macro Recording")
-record_btn = Button(tk, text="Record", bg='red', command=recorder.record())
+record_btn = Button(tk, text="Record", bg='red', command=recorder.record)
 
 record_title.grid(row=0, column=1, pady=10)
 record_btn.grid(row=1, column=1)

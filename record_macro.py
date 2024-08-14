@@ -1,12 +1,12 @@
 from pynput import keyboard, mouse
 from datetime import datetime
 import json
+from threading import Thread
 
-
-# Class to record new macros
 class Recorder:
     def __init__(self):
         self.events = []
+        self.listening = False
 
     # Function to record keyboard events
     def on_key_press(self, key):
@@ -18,7 +18,8 @@ class Recorder:
     def on_key_release(self, key):
         self.events.append({'event': 'key_release', 'key': str(key), 'time': datetime.now().timestamp()})
         if key == keyboard.Key.esc:
-            # Stop listener
+            print("ESC key pressed, stopping listener...")
+            self.listening = False
             return False
 
     # Function to record mouse events
@@ -48,12 +49,39 @@ class Recorder:
 
     # Start the listeners
     def start_listeners(self):
-        with mouse.Listener(on_click=self.on_click, on_move=self.on_move, on_scroll=self.on_scroll) as mouse_listener, \
-                keyboard.Listener(on_press=self.on_key_press, on_release=self.on_key_release) as keyboard_listener:
-            mouse_listener.join()
-            keyboard_listener.join()
+        # Create new instances of the listeners
+        mouse_listener = mouse.Listener(on_click=self.on_click, on_move=self.on_move, on_scroll=self.on_scroll)
+        keyboard_listener = keyboard.Listener(on_press=self.on_key_press, on_release=self.on_key_release)
+
+        self.listening = True
+        mouse_listener.start()
+        keyboard_listener.start()
+
+        keyboard_listener.join()  # Blocks until the keyboard listener is stopped (ESC pressed)
+        mouse_listener.stop()     # Stop the mouse listener after keyboard listener stops
 
     # Save the recorded events to a file
     def save_events(self):
         with open('recorded_events.json', 'w') as f:
             json.dump(self.events, f, indent=4)
+
+    def record(self):
+        if self.listening:
+            print("Recording is already in progress.")
+            return
+
+        def run_listeners():
+            try:
+                print("Recording started. Press ESC to stop.")
+                self.start_listeners()
+
+            except KeyboardInterrupt:
+                pass
+
+            finally:
+                self.save_events()
+                print("Recording saved to 'recorded_events.json'")
+
+        # Create and start a new thread for the listeners
+        self.listener_thread = Thread(target=run_listeners)
+        self.listener_thread.start()
