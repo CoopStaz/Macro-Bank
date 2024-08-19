@@ -68,7 +68,7 @@ class Recorder:
     # Save the recorded events to a file
     def save_events(self, name, map_name):
         # Modify the filename to include the map name
-        filename = f'{map_name}_macros.json'
+        filename = f'macros/{map_name}_macros.json'
         try:
             # Load existing macros if the file exists
             with open(filename, 'r') as f:
@@ -131,7 +131,7 @@ class Recorder:
                 dx, dy = event['scroll']
                 mouse.Controller().scroll(dx, dy)
 
-    def record(self):
+    def record(self, name, map_name):
         if self.listening:
             print("Recording is already in progress.")
             return
@@ -149,8 +149,8 @@ class Recorder:
                 pass
 
             finally:
-                self.save_events()
-                print("Recording saved to 'recorded_events.json'")
+                self.save_events(name, map_name)
+                print(f"Recording saved to '{map_name}_macros.json'")
 
         # Create and start a new thread for the listeners
         listener_thread = Thread(target=run_listeners)

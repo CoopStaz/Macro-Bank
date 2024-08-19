@@ -53,11 +53,9 @@ def create_macro(map_name):
             print("Macro name cannot be empty.")
             return
 
-        # Start recording with the provided name
-        recorder.record()
+        # Start recording and pass the macro name and map name
+        recorder.record(macro_name, map_name)
 
-        # Save the macro
-        recorder.save_events(macro_name, map_name)
         print(f"Macro '{macro_name}' saved for {map_name.capitalize()}.")
         open_map_page(map_name)  # Refresh the map page to show the new macro
 
@@ -67,8 +65,7 @@ def create_macro(map_name):
     create_macro_win.configure(bg="#bdeaff")
 
     # Label and entry for macro name
-    Label(create_macro_win, text="Enter Macro Name:", bg="#bdeaff", font=("New Amsterdam", 12)).grid(row=0, column=0,
-                                                                                                     padx=10, pady=10)
+    Label(create_macro_win, text="Enter Macro Name:", bg="#bdeaff", font=("New Amsterdam", 12)).grid(row=0, column=0, padx=10, pady=10)
     entry = Entry(create_macro_win, font=("New Amsterdam", 12))
     entry.grid(row=0, column=1, padx=10, pady=10)
 
