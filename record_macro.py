@@ -66,9 +66,22 @@ class Recorder:
         mouse_listener.stop()     # Stop the mouse listener after keyboard listener stops
 
     # Save the recorded events to a file
-    def save_events(self, name, map):
-        with open(f'macros/{map}_macros.json', 'w') as f:
-            json.dump({name: self.events}, f, indent=4)
+    def save_events(self, name, map_name):
+        # Modify the filename to include the map name
+        filename = f'{map_name}_macros.json'
+        try:
+            # Load existing macros if the file exists
+            with open(filename, 'r') as f:
+                macros = json.load(f)
+        except FileNotFoundError:
+            macros = {}
+
+        # Add the new macro with its name
+        macros[name] = self.events
+
+        # Save the updated macros back to the file
+        with open(filename, 'w') as f:
+            json.dump(macros, f, indent=4)
 
     def load_events(self, filename='recorded_events.json'):
         with open(filename, 'r') as f:

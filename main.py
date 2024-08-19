@@ -80,7 +80,7 @@ def create_macro(map_name):
 # Load macros from file
 def load_macros(map_name, listbox):
     try:
-        with open(f'{map_name}_macros.json', 'r') as f:
+        with open(f'macros/{map_name}_macros.json', 'r') as f:
             macros = json.load(f)
             for macro in macros:
                 listbox.insert(END, macro)
@@ -93,7 +93,7 @@ def load_macros(map_name, listbox):
 def load_and_resize_image(filename, size=(150, 100)):
     try:
         img = Image.open(filename)
-        img = img.resize(size, Image.NEAREST)  # Use LANCZOS for better quality
+        img = img.resize(size, Image.LANCZOS)
         return ImageTk.PhotoImage(img)
     except Exception as e:
         print(f"Error loading image {filename}: {e}")
@@ -119,9 +119,6 @@ for i, map_name in enumerate(map_names):
         button.grid(row=2 + i // 3, column=i % 3, padx=5, pady=5)
         buttons.append(button)  # Keep a reference to the button to prevent garbage collection
 
-        # TODO Add feature to open a new page relevant to a map once it has been selected
-        # TODO Add feature to add macros for a specific map
-        # TODO Add feature to label macros based on name and display them when a map is clicked
         # TODO Add feature to delete a specific macro
 
 tk.mainloop()
