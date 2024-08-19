@@ -1,7 +1,6 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from record_macro import Recorder
-import os
 
 # Assign basic UI layout
 tk = Tk()
