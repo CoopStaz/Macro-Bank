@@ -15,14 +15,14 @@ tk.columnconfigure(2, weight=1)
 recorder = Recorder()
 
 record_title = Label(tk, text="Macro Recording")
-record_btn = Button(tk, text="Record", bg='red', command=recorder.record)
+record_btn = Button(tk, text="Record", bg='red', command=recorder.record, font=("New Amsterdam", 12, 'bold'))
 
-record_title.grid(row=0, column=0, pady=10)
-record_btn.grid(row=1, column=0)
+record_title.grid(row=0, column=1, pady=10)
+record_btn.grid(row=1, column=1)
 
 
 # Define a function to load and resize images
-def load_and_resize_image(filename, size=(100, 100)):
+def load_and_resize_image(filename, size=(150, 100)):
     try:
         img = Image.open(filename)
         img = img.resize(size, Image.NEAREST)  # Use LANCZOS for better quality
@@ -44,7 +44,9 @@ for i, map_name in enumerate(map_names):
     new_img = load_and_resize_image(file_path)
     if new_img:  # Only create a button if the image was loaded successfully
         image_references.append(new_img)  # Keep a reference to the image
-        button = Button(tk, image=new_img)
+        button = Button(tk, image=new_img, text=map_name.capitalize(),
+                        compound=CENTER,
+                        font=("New Amsterdam", 12, 'bold'), fg='white', relief=FLAT)
         button.grid(row=2 + i // 3, column=i % 3, padx=5, pady=5)
         buttons.append(button)  # Keep a reference to the button to prevent garbage collection
 
