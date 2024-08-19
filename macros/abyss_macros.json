@@ -1,0 +1,102 @@
+{
+    "first": [
+        {
+            "event": "mouse_move",
+            "position": [
+                -1479,
+                834
+            ],
+            "time": 1724069164.224419
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1480,
+                834
+            ],
+            "time": 1724069164.244448
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1481,
+                834
+            ],
+            "time": 1724069164.49002
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1481,
+                834
+            ],
+            "time": 1724069164.509104
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1482,
+                834
+            ],
+            "time": 1724069164.519129
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1482,
+                834
+            ],
+            "time": 1724069164.528768
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1483,
+                834
+            ],
+            "time": 1724069164.538841
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1483,
+                834
+            ],
+            "time": 1724069164.55141
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1484,
+                834
+            ],
+            "time": 1724069164.571955
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1485,
+                834
+            ],
+            "time": 1724069164.619035
+        },
+        {
+            "event": "mouse_move",
+            "position": [
+                -1485,
+                834
+            ],
+            "time": 1724069164.64414
+        },
+        {
+            "event": "key_press",
+            "key": "Key.esc",
+            "time": 1724069164.730063
+        },
+        {
+            "event": "key_release",
+            "key": "Key.esc",
+            "time": 1724069164.827704
+        }
+    ]
+}
