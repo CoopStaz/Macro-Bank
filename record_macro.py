@@ -69,6 +69,54 @@ class Recorder:
         with open('recorded_events.json', 'w') as f:
             json.dump(self.events, f, indent=4)
 
+    def load_events(self, filename='recorded_events.json'):
+        with open(filename, 'r') as f:
+            self.events = json.load(f)
+
+    def replay_events(self):
+        if not self.events:
+            print("No events to replay. Please load or record events first.")
+            return
+
+        start_time = self.events[0]['time']
+
+        for event in self.events:
+            # Calculate the delay between events
+            time.sleep(event['time'] - start_time)
+            start_time = event['time']
+
+            if event['event'] == 'key_press':
+                key = event['key']
+                if len(key) == 1:
+                    keyboard.Controller().press(key)
+                else:
+                    keyboard.Controller().press(eval(f'keyboard.Key.{key.split(".")[1]}'))
+
+            elif event['event'] == 'key_release':
+                key = event['key']
+                if len(key) == 1:
+                    keyboard.Controller().release(key)
+                else:
+                    keyboard.Controller().release(eval(f'keyboard.Key.{key.split(".")[1]}'))
+
+            elif event['event'] == 'mouse_click':
+                x, y = event['position']
+                button = eval(f'mouse.Button.{event["button"].split(".")[1]}')
+                if event['pressed']:
+                    mouse.Controller().press(button)
+                else:
+                    mouse.Controller().release(button)
+                mouse.Controller().position = (x, y)
+
+            elif event['event'] == 'mouse_move':
+                x, y = event['position']
+                mouse.Controller().position = (x, y)
+
+            elif event['event'] == 'mouse_scroll':
+                x, y = event['position']
+                dx, dy = event['scroll']
+                mouse.Controller().scroll(dx, dy)
+
     def record(self):
         if self.listening:
             print("Recording is already in progress.")
