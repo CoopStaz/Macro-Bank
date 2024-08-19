@@ -35,6 +35,7 @@ class Recorder:
         })
 
     def on_move(self, x, y):
+        # TODO Add filter so that a mouse movement is only recorded if it surpasses a minimum distance
         self.events.append({
             'event': 'mouse_move',
             'position': (x, y),

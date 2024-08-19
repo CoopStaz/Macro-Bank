@@ -1,748 +1,82 @@
 [
     {
-        "event": "mouse_move",
-        "position": [
-            549,
-            453
-        ],
-        "time": 1723636902.638519
+        "event": "key_press",
+        "key": "a",
+        "time": 1724047335.485601
     },
     {
-        "event": "mouse_move",
-        "position": [
-            549,
-            452
-        ],
-        "time": 1723636902.646744
+        "event": "key_release",
+        "key": "'a'",
+        "time": 1724047335.597114
     },
     {
-        "event": "mouse_move",
-        "position": [
-            549,
-            452
-        ],
-        "time": 1723636902.653894
+        "event": "key_press",
+        "key": "b",
+        "time": 1724047336.088114
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            451
-        ],
-        "time": 1723636902.660001
+        "event": "key_release",
+        "key": "'b'",
+        "time": 1724047336.207114
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            451
-        ],
-        "time": 1723636902.667528
+        "event": "key_press",
+        "key": "s",
+        "time": 1724047336.710518
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            450
-        ],
-        "time": 1723636902.674848
+        "event": "key_release",
+        "key": "'s'",
+        "time": 1724047336.796035
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            450
-        ],
-        "time": 1723636902.677861
+        "event": "key_press",
+        "key": "Key.backspace",
+        "time": 1724047339.467065
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            450
-        ],
-        "time": 1723636902.682356
+        "event": "key_release",
+        "key": "Key.backspace",
+        "time": 1724047339.55206
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            449
-        ],
-        "time": 1723636902.690363
+        "event": "key_press",
+        "key": "Key.backspace",
+        "time": 1724047339.79606
     },
     {
-        "event": "mouse_move",
-        "position": [
-            548,
-            449
-        ],
-        "time": 1723636902.697385
+        "event": "key_release",
+        "key": "Key.backspace",
+        "time": 1724047339.873063
     },
     {
-        "event": "mouse_move",
-        "position": [
-            547,
-            449
-        ],
-        "time": 1723636902.700393
+        "event": "key_press",
+        "key": "b",
+        "time": 1724047340.493008
     },
     {
-        "event": "mouse_move",
-        "position": [
-            547,
-            448
-        ],
-        "time": 1723636902.705902
+        "event": "key_release",
+        "key": "'b'",
+        "time": 1724047340.568007
     },
     {
-        "event": "mouse_move",
-        "position": [
-            547,
-            447
-        ],
-        "time": 1723636902.713456
+        "event": "key_press",
+        "key": "c",
+        "time": 1724047340.924334
     },
     {
-        "event": "mouse_move",
-        "position": [
-            547,
-            447
-        ],
-        "time": 1723636902.722443
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            446
-        ],
-        "time": 1723636902.730595
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            446
-        ],
-        "time": 1723636902.73892
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            445
-        ],
-        "time": 1723636902.746431
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            445
-        ],
-        "time": 1723636902.752441
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            444
-        ],
-        "time": 1723636902.761075
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            443
-        ],
-        "time": 1723636902.768587
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            443
-        ],
-        "time": 1723636902.770585
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            443
-        ],
-        "time": 1723636902.774714
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            442
-        ],
-        "time": 1723636902.781713
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            442
-        ],
-        "time": 1723636902.788752
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            441
-        ],
-        "time": 1723636902.794906
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            441
-        ],
-        "time": 1723636902.80241
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            440
-        ],
-        "time": 1723636902.808433
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            439
-        ],
-        "time": 1723636902.813684
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            439
-        ],
-        "time": 1723636902.819692
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            438
-        ],
-        "time": 1723636902.824974
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            438
-        ],
-        "time": 1723636902.829986
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            437
-        ],
-        "time": 1723636902.833505
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            437
-        ],
-        "time": 1723636902.834504
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            437
-        ],
-        "time": 1723636902.838514
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            436
-        ],
-        "time": 1723636902.84353
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            435
-        ],
-        "time": 1723636902.84798
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            546,
-            435
-        ],
-        "time": 1723636902.852487
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            435
-        ],
-        "time": 1723636902.855492
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            434
-        ],
-        "time": 1723636902.856493
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            434
-        ],
-        "time": 1723636902.861006
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            433
-        ],
-        "time": 1723636902.865523
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            433
-        ],
-        "time": 1723636902.869525
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            432
-        ],
-        "time": 1723636902.874043
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            431
-        ],
-        "time": 1723636902.877042
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            431
-        ],
-        "time": 1723636902.881045
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            430
-        ],
-        "time": 1723636902.883559
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            430
-        ],
-        "time": 1723636902.886566
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            547,
-            429
-        ],
-        "time": 1723636902.890565
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            429
-        ],
-        "time": 1723636902.893067
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            429
-        ],
-        "time": 1723636902.894078
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            428
-        ],
-        "time": 1723636902.897072
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            427
-        ],
-        "time": 1723636902.900072
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            427
-        ],
-        "time": 1723636902.902578
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            426
-        ],
-        "time": 1723636902.905583
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            426
-        ],
-        "time": 1723636902.908583
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            425
-        ],
-        "time": 1723636902.911584
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            548,
-            425
-        ],
-        "time": 1723636902.9151
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            424
-        ],
-        "time": 1723636902.918097
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            423
-        ],
-        "time": 1723636902.9211
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            423
-        ],
-        "time": 1723636902.923613
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            422
-        ],
-        "time": 1723636902.925619
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            422
-        ],
-        "time": 1723636902.92762
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            422
-        ],
-        "time": 1723636902.92862
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            421
-        ],
-        "time": 1723636902.931621
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            549,
-            421
-        ],
-        "time": 1723636902.935644
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            550,
-            421
-        ],
-        "time": 1723636902.937643
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            550,
-            420
-        ],
-        "time": 1723636902.938644
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            550,
-            419
-        ],
-        "time": 1723636902.941642
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            550,
-            419
-        ],
-        "time": 1723636902.944683
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            419
-        ],
-        "time": 1723636902.947683
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            418
-        ],
-        "time": 1723636902.948683
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            418
-        ],
-        "time": 1723636902.953195
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            417
-        ],
-        "time": 1723636902.9562
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            417
-        ],
-        "time": 1723636902.959214
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            417
-        ],
-        "time": 1723636902.960215
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            416
-        ],
-        "time": 1723636902.964731
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            551,
-            416
-        ],
-        "time": 1723636902.968728
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            416
-        ],
-        "time": 1723636902.970727
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            415
-        ],
-        "time": 1723636902.974242
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            414
-        ],
-        "time": 1723636902.979251
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            414
-        ],
-        "time": 1723636902.984768
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            414
-        ],
-        "time": 1723636902.985771
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            413
-        ],
-        "time": 1723636902.99077
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            552,
-            413
-        ],
-        "time": 1723636902.997791
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            413
-        ],
-        "time": 1723636903.002296
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            412
-        ],
-        "time": 1723636903.006303
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            412
-        ],
-        "time": 1723636903.01433
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            412
-        ],
-        "time": 1723636903.018335
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            411
-        ],
-        "time": 1723636903.023494
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            553,
-            410
-        ],
-        "time": 1723636903.034792
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            554,
-            410
-        ],
-        "time": 1723636903.040784
-    },
-    {
-        "event": "mouse_move",
-        "position": [
-            554,
-            410
-        ],
-        "time": 1723636903.058332
+        "event": "key_release",
+        "key": "'c'",
+        "time": 1724047341.006338
     },
     {
         "event": "key_press",
         "key": "Key.esc",
-        "time": 1723636903.115389
+        "time": 1724047341.591579
     },
     {
         "event": "key_release",
         "key": "Key.esc",
-        "time": 1723636903.220342
+        "time": 1724047341.682581
     }
 ]
