@@ -27,9 +27,8 @@ def open_map_page(map_name):
             continue  # Skips Toplevel windows
         widget.grid_forget()
 
-    # TODO Create better styling for the map pages
-    # TODO Create better styling of new macros widget
     # TODO Create better layout and styling of the stored macros
+    # TODO Add feature to use the created macros
 
     # Create a new frame for the map page
     map_page = Frame(tk, bg="#bdeaff")
@@ -48,11 +47,11 @@ def open_map_page(map_name):
     create_macro_btn = Button(map_page, text="Create New Macro", bg='red', fg='white',
                               font=("New Amsterdam", 12, 'bold'),
                               command=lambda: create_macro(map_name))
-    create_macro_btn.grid(row=1, column=0, pady=10, columnspan=3)
+    create_macro_btn.grid(row=2, column=0, pady=10, columnspan=3)
 
     # Listbox to display saved macros
     macros_list = Listbox(map_page, width=50, height=20, font=("New Amsterdam", 12))
-    macros_list.grid(row=2, column=0, columnspan=3, pady=10)
+    macros_list.grid(row=1, column=0, columnspan=3, pady=10)
 
     # Load and display saved macros for the map
     load_macros(map_name, macros_list)
@@ -81,7 +80,7 @@ def create_macro(map_name):
     create_macro_win.configure(bg="#bdeaff")
 
     # Label and entry for macro name
-    (Label(create_macro_win, text="Enter Macro Name:", bg="#bdeaff", font=("New Amsterdam", 12))
+    (Label(create_macro_win, text="Enter new macro name:", bg="#bdeaff", font=("New Amsterdam", 12))
      .grid(row=0, column=0, padx=10, pady=10))
     entry = Entry(create_macro_win, font=("New Amsterdam", 12))
     entry.grid(row=0, column=1, padx=10, pady=10)
