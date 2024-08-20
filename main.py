@@ -24,22 +24,32 @@ def open_map_page(map_name):
             continue  # Skips Toplevel windows
         widget.grid_forget()
 
+    # TODO Create better styling for the map pages
+    # TODO Create better styling of new macros widget
+    # TODO Create better layout and styling of the stored macros
+
     # Create a new frame for the map page
     map_page = Frame(tk, bg="#bdeaff")
-    map_page.grid(row=0, column=0, sticky="nsew")
+    map_page.grid(row=0, column=0, columnspan=3, sticky="nsew")
 
     # Label for the selected map
     label = Label(map_page, text=f"Macros for {map_name.capitalize()}", bg="#bdeaff", font=("New Amsterdam", 16, 'bold'))
-    label.grid(row=0, column=0, pady=10)
+    label.grid(row=0, column=0, pady=10, columnspan=3)
 
     # Button to create a new macro
-    create_macro_btn = Button(map_page, text="Create New Macro", bg='blue', fg='white', font=("New Amsterdam", 12, 'bold'),
+    create_macro_btn = Button(map_page, text="Create New Macro", bg='blue', fg='white',
+                              font=("New Amsterdam", 12, 'bold'),
                               command=lambda: create_macro(map_name))
-    create_macro_btn.grid(row=1, column=0, pady=10)
+    create_macro_btn.grid(row=1, column=0, pady=10, columnspan=3)
 
     # Listbox to display saved macros
     macros_list = Listbox(map_page, width=50, height=20, font=("New Amsterdam", 12))
-    macros_list.grid(row=2, column=0, pady=10)
+    macros_list.grid(row=2, column=0, columnspan=3, pady=10)
+
+    # Centers the widgets properly
+    map_page.columnconfigure(0, weight=1)
+    map_page.columnconfigure(1, weight=1)
+    map_page.columnconfigure(2, weight=1)
 
     # Load and display saved macros for the map
     load_macros(map_name, macros_list)
