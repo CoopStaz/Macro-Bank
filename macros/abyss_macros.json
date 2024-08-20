@@ -98,5 +98,47 @@
             "key": "Key.esc",
             "time": 1724069164.827704
         }
+    ],
+    "second": [
+        {
+            "event": "key_press",
+            "key": "a",
+            "time": 1724151290.779361
+        },
+        {
+            "event": "key_release",
+            "key": "'a'",
+            "time": 1724151290.858885
+        },
+        {
+            "event": "key_press",
+            "key": "b",
+            "time": 1724151291.17678
+        },
+        {
+            "event": "key_release",
+            "key": "'b'",
+            "time": 1724151291.24723
+        },
+        {
+            "event": "key_press",
+            "key": "c",
+            "time": 1724151291.615107
+        },
+        {
+            "event": "key_release",
+            "key": "'c'",
+            "time": 1724151291.682835
+        },
+        {
+            "event": "key_press",
+            "key": "Key.esc",
+            "time": 1724151292.264602
+        },
+        {
+            "event": "key_release",
+            "key": "Key.esc",
+            "time": 1724151292.325424
+        }
     ]
 }
